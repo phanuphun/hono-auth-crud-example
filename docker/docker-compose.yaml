@@ -1,0 +1,11 @@
+version: "3.8"
+services: 
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: prepaid_db
+      MYSQL_USER: root_prepaid
+      MYSQL_PASSWORD: pass_prepaid
+    ports:
+      - "3308:3306"
